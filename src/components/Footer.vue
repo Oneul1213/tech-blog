@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <div class="com_footer">
         Footer
     </div>
 </template>
@@ -9,10 +9,7 @@
 </script>
 
 <style lang="scss" scoped>
-.footer {
-    width: 100%;
-    background-color: azure;
-    position: absolute;
-    bottom: 0px;
+.com_footer {
+    height: 100px;
 }
 </style>

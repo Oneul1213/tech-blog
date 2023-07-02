@@ -1,7 +1,6 @@
 <template>
     <div class="main-wrap">
         body
-        <com-footer></com-footer>
     </div>
 </template>
 
