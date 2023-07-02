@@ -9,7 +9,7 @@
                     </div>
                 </template>
                 <template #title>
-                    <P>Oneul</P>
+                    <p>Oneul</p>
                 </template>
                 <template #subtitle>
                     <p>oneul tech blog</p>
