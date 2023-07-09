@@ -1,7 +1,3 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
   <com-header></com-header>
   <div class="body">
@@ -12,6 +8,10 @@ import { RouterLink, RouterView } from 'vue-router'
     <com-footer></com-footer>
   </div>
 </template>
+
+<script setup>
+import { RouterView } from 'vue-router'
+</script>
 
 <style scoped>
 .body {
@@ -37,13 +37,12 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .router_view {
-  flex: 3;
+  flex: 4;
   height: 100%;
 }
 
 .com_footer {
   width: 100%;
-  background-color: azure;
   position: absolute;
   bottom: 0px;
 }

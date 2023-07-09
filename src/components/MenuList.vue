@@ -9,13 +9,15 @@
                     </div>
                 </template>
                 <template #title>
-                    <p>Oneul</p>
+                    <p>오늘(Oneul)</p>
                 </template>
                 <template #subtitle>
                     <p>oneul tech blog</p>
                 </template>
                 <template #content>
-                    <div>content</div>
+                    <div class="links">
+                        <a href="https://github.com/Oneul1213"><Avatar icon="pi pi-github" shape="circle" /> Github</a>
+                    </div>
                 </template>
             </Card>
 
@@ -40,7 +42,8 @@ const menuItems = ref([
         label: "메뉴1",
         items: [
             {
-                label: "하위 메뉴 1",
+                label: "article",
+                to: "/article"
             },
             {
                 label: "하위 메뉴 2",
@@ -58,7 +61,7 @@ const menuItems = ref([
             },
         ],
     }
-])
+]);
 </script>
 
 <style lang="scss" scoped>
@@ -74,6 +77,15 @@ const menuItems = ref([
                 width: 8rem;
                 height: 8rem;
                 // font-size: 8rem;
+            }
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            a, a:link, a:visited, a:hover, a:active {
+                text-decoration: none;
+                color: black;
             }
         }
     }

@@ -26,13 +26,18 @@ import Footer from '@/components/Footer.vue'
 const app = createApp(App)
 
 app.use(createPinia())
-app.use(router)
-app.use(PrimeVue)
+    .use(router)
+    .use(PrimeVue)
 
 // 공통 컴포넌트 등록
 app
     .component('com-header', Header)
     .component('com-menu-list', MenuList)
     .component('com-footer', Footer)
+
+// router
+router.beforeEach((to, from) => {
+    document.title = to.meta.title;
+})
 
 app.mount('#app')

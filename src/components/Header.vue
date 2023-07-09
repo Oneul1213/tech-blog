@@ -2,7 +2,7 @@
     <div class="com_header">
         <Menubar :model="menuItems">
             <template #start>
-                <a class="title">Oneul dev</a>
+                <a class="title" @click="moveMain">Oneul dev</a>
             </template>
             <template #end>
                 <div class="darkmode">
@@ -18,6 +18,10 @@
 import Menubar from "primevue/menubar";
 import InputSwitch from "primevue/inputswitch";
 
+import { useRoute, useRouter } from 'vue-router';
+
+const router = useRouter();
+
 import { ref } from "vue";
 
 const menuItems = ref([ 
@@ -30,6 +34,10 @@ const menuItems = ref([
 ]);
 
 const isDarkMode = ref(false);
+
+function moveMain() {
+    router.push({ name: "home" });
+}
 
 </script>
 
