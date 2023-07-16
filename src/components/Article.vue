@@ -30,7 +30,7 @@ import PanelMenu from "primevue/panelmenu";
 import Markdown from "vue3-markdown-it";
 
 import articleTemplate from "@/articles/articleTemplate";
-import navIndex from "@/components/navIndex";   // TODO : right index
+import navIndex from "@/components/navIndex.vue";   // TODO : right index
 
 import { ref } from 'vue'
 
