@@ -2,7 +2,7 @@
     <div class="com_article">
         <div class="article_wrap">
             <div class="title_wrap">
-                <span class="title">[title] 제목</span>
+                <span class="title">{{ title }}</span>
             </div>
             <div class="index">
                 <PanelMenu v-model:expandedKeys="expandKeys" :model="indexList"></PanelMenu>
@@ -23,33 +23,32 @@
 
 <script setup>
 // markdown-it
-import 'highlight.js/styles/monokai.css';
+import "highlight.js/styles/monokai.css";
 
-import Divider from 'primevue/divider';
-import PanelMenu from 'primevue/panelmenu';
-import Markdown from 'vue3-markdown-it';
+import Divider from "primevue/divider";
+import PanelMenu from "primevue/panelmenu";
+import Markdown from "vue3-markdown-it";
+
+import articleTemplate from "@/articles/articleTemplate";
+import navIndex from "@/components/navIndex";   // TODO : right index
 
 import { ref } from 'vue'
 
-const mdSource = ref("# Hello, World! \n ```javascript\nconst name\n```");
-
-const expandKeys = { 'title': true };
-const indexList = ref([
+const title = ref(articleTemplate.title);
+const expandKeys = articleTemplate.expandKeys;
+const indexList = ref(articleTemplate.indexList);
+const mdSource = ref(articleTemplate.mdSource);
+const active = ref(0);
+const rightIndex = ref([
     {
-        key: 'title',
-        label: "목차",
-        command: () => {
-            expandKeys["title"] = !expandKeys["title"];
-        },
-        items: [
-            {
-                label: "목록 1",
-            },
-            {
-                label: "목록 2",
-            }
-        ]
-    }
+        label: 'test1',
+    },
+    {
+        label: 'test2',
+    },
+    {
+        label: 'test3',
+    },
 ]);
 </script>
 
@@ -85,6 +84,11 @@ const indexList = ref([
         }
         .right_index_wrap {
             padding: 1.25rem 0;
+            :deep(.p-tabmenu) {
+                ul {
+                    flex-direction: column;
+                }
+            }
         }
     }
 }

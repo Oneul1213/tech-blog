@@ -18,20 +18,14 @@
 import Menubar from "primevue/menubar";
 import InputSwitch from "primevue/inputswitch";
 
-import { useRoute, useRouter } from 'vue-router';
+import { ref } from "vue";
+import { useRoute, useRouter } from "vue-router";
+
+import headerMenu from "@/menuItems/headerMenu"
 
 const router = useRouter();
 
-import { ref } from "vue";
-
-const menuItems = ref([ 
-    {
-        label: "메뉴 1",
-    },
-    {
-        label: "메뉴 2",
-    }
-]);
+const menuItems = ref(headerMenu);
 
 const isDarkMode = ref(false);
 

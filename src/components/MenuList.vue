@@ -35,33 +35,11 @@ import Menu from "primevue/menu";
 import Card from "primevue/card";
 import Avatar from "primevue/avatar";
 
-import { ref } from 'vue';
+import leftMenu from "@/menuItems/leftMenu";
 
-const menuItems = ref([
-    {
-        label: "메뉴1",
-        items: [
-            {
-                label: "article",
-                to: "/article"
-            },
-            {
-                label: "하위 메뉴 2",
-            },
-        ],
-    },
-    {
-        label: "메뉴 2",
-        items: [
-            {
-                label: "하위 메뉴 1",
-            },
-            {
-                label: "하위 메뉴 2",
-            },
-        ],
-    }
-]);
+import { ref } from "vue";
+
+const menuItems = ref(leftMenu);
 </script>
 
 <style lang="scss" scoped>
