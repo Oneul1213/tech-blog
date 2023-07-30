@@ -15,17 +15,16 @@ import { RouterView } from 'vue-router'
 
 <style scoped>
 .body {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
 .body_content {
   display: flex;
-  height: 100%;
-  padding-bottom: 100px; /** footer 높이 */
 }
 
-.com_header {
+:deep(.com_header) {
   position: sticky;
   top: 0px;
   z-index: 999;
@@ -41,9 +40,7 @@ import { RouterView } from 'vue-router'
   height: 100%;
 }
 
-.com_footer {
+:deep(.com_footer) {
   width: 100%;
-  position: absolute;
-  bottom: 0px;
 }
 </style>

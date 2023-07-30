@@ -1,6 +1,6 @@
 export default [
     {
-        label: "메뉴1",
+        label: "프로젝트",
         items: [
             {
                 label: "article",
@@ -12,14 +12,17 @@ export default [
         ],
     },
     {
-        label: "메뉴 2",
+        label: "공부",
         items: [
             {
-                label: "하위 메뉴 1",
+                label: "Vue.js",
             },
             {
-                label: "하위 메뉴 2",
+                label: "Android",
+            },
+            {
+                label: "Computer Science",
             },
         ],
-    }
+    },
 ]

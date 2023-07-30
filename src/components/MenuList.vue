@@ -24,7 +24,6 @@
         </div>
         <div class="menu">
             <Menu :model="menuItems">
-
             </Menu>
         </div>
     </div>
