@@ -25,7 +25,7 @@ import Divider from "primevue/divider";
 
 import articleTemplate from "@/articles/articleTemplate";
 import Toc from "@/components/article/Toc.vue";
-import NavIndex from "@/components/article/navIndex.vue";
+import NavIndex from "@/components/article/NavIndex.vue";
 
 import { ref } from 'vue'
 
