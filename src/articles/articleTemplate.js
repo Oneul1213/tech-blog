@@ -11,12 +11,15 @@ export default {
             items: [
                 {
                     label: "목록 1",
+                    command: () => {
+                        
+                    },
                 },
                 {
                     label: "목록 2",
                 },
             ],
-        }
+        },
     ],
     mdSource: "# Hello, World! \n test\n\n test\n\n test\n\n  test\n\n test\n\n test\n\n test\n\n test\n\n test\n\n test\n\n test\n\n test\n\n test\n\n test\n\n test\n\n ```javascript\nconst name\n```",
 }

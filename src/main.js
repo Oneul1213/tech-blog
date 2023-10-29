@@ -19,9 +19,9 @@ import App from './App.vue'
 import router from './router'
 import PrimeVue from 'primevue/config'
 
-import Header from '@/components/Header.vue'
-import MenuList from '@/components/MenuList.vue'
-import Footer from '@/components/Footer.vue'
+import Header from '@/components/main/Header.vue'
+import MenuList from '@/components/main/MenuList.vue'
+import Footer from '@/components/main/Footer.vue'
 
 const app = createApp(App)
 
@@ -31,9 +31,9 @@ app.use(createPinia())
 
 // 공통 컴포넌트 등록
 app
-    .component('com-header', Header)
-    .component('com-menu-list', MenuList)
-    .component('com-footer', Footer)
+    .component('ComHeader', Header)
+    .component('comMenuList', MenuList)
+    .component('ComFooter', Footer)
 
 // router
 router.beforeEach((to, from) => {
