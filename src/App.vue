@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-undef-components -->
 <template>
   <com-header></com-header>
   <div class="body">

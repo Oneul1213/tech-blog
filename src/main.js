@@ -32,7 +32,7 @@ app.use(createPinia())
 // 공통 컴포넌트 등록
 app
     .component('ComHeader', Header)
-    .component('comMenuList', MenuList)
+    .component('ComMenuList', MenuList)
     .component('ComFooter', Footer)
 
 // router
