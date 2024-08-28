@@ -5,7 +5,7 @@
                 <template #header>
                     <div class="thumbnail">
                         <!-- <Avatar image="" size="xlarge"></Avatar> -->
-                        <Avatar class="thumbnail_image" icon="pi pi-user" size="xlarge"></Avatar>
+                        <Avatar class="thumbnail_image" image="./public/catrie.png" size="xlarge"></Avatar>
                     </div>
                 </template>
                 <template #title>
